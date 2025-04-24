@@ -31,7 +31,7 @@ public class Characters {
 
     @ManyToOne
     @JoinColumn(name = "classId", referencedColumnName = "classId")
-    private Class characterClass;
+    private CharacterClass characterClass;
 
     @ManyToOne
     @JoinColumn(name = "backgroundId", referencedColumnName = "backgroundId")

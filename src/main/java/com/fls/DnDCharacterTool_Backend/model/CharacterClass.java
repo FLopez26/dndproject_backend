@@ -9,7 +9,7 @@ import lombok.AllArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Class {
+public class CharacterClass {
 
     @Id
     private Integer classId;
