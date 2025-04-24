@@ -9,17 +9,21 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Background {
+public class Race {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer backgroundId;
+    private Integer raceId;
 
     private String name;
+    private Integer raceSelection;
 
     @Column(columnDefinition = "TEXT")
-    private String equipment;
+    private String abilities;
 
     @Column(columnDefinition = "TEXT")
     private String competencies;
+
+    @ManyToOne
+    @JoinColumn(name = "statsChangeId", referencedColumnName = "statsChangeId")
+    private StatsChange statsChange;
 }

@@ -9,17 +9,14 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Background {
+public class Competencies {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer backgroundId;
+    private Integer competencyId;
 
     private String name;
 
-    @Column(columnDefinition = "TEXT")
-    private String equipment;
-
-    @Column(columnDefinition = "TEXT")
-    private String competencies;
+    private Integer classId; // Referencia al ID de Class
+    private Integer backgroundId; // Referencia al ID de Background
 }
