@@ -26,6 +26,10 @@ public class Characters {
     private String flaws;
 
     @ManyToOne
+    @JoinColumn(name= "statsId", referencedColumnName = "statsId")
+    private Stats stats;
+
+    @ManyToOne
     @JoinColumn(name = "raceId", referencedColumnName = "raceId")
     private Race characterRace;
 
