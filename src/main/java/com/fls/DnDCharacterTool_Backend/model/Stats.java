@@ -21,6 +21,7 @@ public class Stats {
     private Integer intelligence;
     private Integer wisdom;
     private Integer charisma;
+    private Integer hitPoints;
 
     @ManyToOne
     @JoinColumn(name = "statsChangeId", referencedColumnName = "statsChangeId")

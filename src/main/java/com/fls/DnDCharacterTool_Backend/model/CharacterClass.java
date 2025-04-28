@@ -16,7 +16,6 @@ public class CharacterClass {
 
     private String name;
     private Integer classSelection;
-    private Integer hitPoints;
     private String diceHitPoints;
 
     @Column(columnDefinition = "TEXT")

@@ -21,4 +21,5 @@ public class StatsChange {
     private Integer intelligence;
     private Integer wisdom;
     private Integer charisma;
+    private Integer hitPoints;
 }
