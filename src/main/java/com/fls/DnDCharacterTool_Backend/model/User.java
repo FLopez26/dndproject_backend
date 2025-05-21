@@ -37,4 +37,16 @@ public class User {
             inverseJoinColumns = @JoinColumn(name = "character_id")
     )
     private Set<Characters> savedCharacters = new HashSet<>();
+
+    public String getUsername() {
+        return username;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
 }

@@ -15,6 +15,11 @@ public class Equipment {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer equipmentId;
 
-    private Integer classId;
-    private Integer backgroundId;
+    @ManyToOne
+    @JoinColumn(name = "classId", referencedColumnName = "classId")
+    private CharacterClass characterClass;
+
+    @ManyToOne
+    @JoinColumn(name = "backgroundId", referencedColumnName = "backgroundId")
+    private Background background;
 }

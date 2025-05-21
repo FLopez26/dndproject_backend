@@ -15,6 +15,11 @@ public class Abilities {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer abilityId;
 
-    private Integer raceId;
-    private Integer classId;
+    @ManyToOne
+    @JoinColumn(name = "raceId", referencedColumnName = "raceId")
+    private Race race;
+
+    @ManyToOne
+    @JoinColumn(name = "classId", referencedColumnName = "classId")
+    private CharacterClass characterClass;
 }

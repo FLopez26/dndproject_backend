@@ -17,6 +17,11 @@ public class Competencies {
 
     private String name;
 
-    private Integer classId; // Referencia al ID de Class
-    private Integer backgroundId; // Referencia al ID de Background
+    @ManyToOne
+    @JoinColumn(name = "classId", referencedColumnName = "classId")
+    private CharacterClass characterClass;
+
+    @ManyToOne
+    @JoinColumn(name = "backgroundId", referencedColumnName = "backgroundId")
+    private Background background;
 }
