@@ -22,4 +22,28 @@ public class Abilities {
     @ManyToOne
     @JoinColumn(name = "classId", referencedColumnName = "classId")
     private CharacterClass characterClass;
+
+    public Integer getAbilityId() {
+        return abilityId;
+    }
+
+    public void setAbilityId(Integer abilityId) {
+        this.abilityId = abilityId;
+    }
+
+    public Race getRace() {
+        return race;
+    }
+
+    public void setRace(Race race) {
+        this.race = race;
+    }
+
+    public CharacterClass getCharacterClass() {
+        return characterClass;
+    }
+
+    public void setCharacterClass(CharacterClass characterClass) {
+        this.characterClass = characterClass;
+    }
 }

@@ -26,4 +26,60 @@ public class CharacterClass {
 
     @Column(columnDefinition = "TEXT")
     private String abilities;
+
+    public Integer getClassId() {
+        return classId;
+    }
+
+    public void setClassId(Integer classId) {
+        this.classId = classId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Integer getClassSelection() {
+        return classSelection;
+    }
+
+    public void setClassSelection(Integer classSelection) {
+        this.classSelection = classSelection;
+    }
+
+    public String getDiceHitPoints() {
+        return diceHitPoints;
+    }
+
+    public void setDiceHitPoints(String diceHitPoints) {
+        this.diceHitPoints = diceHitPoints;
+    }
+
+    public String getEquipment() {
+        return equipment;
+    }
+
+    public void setEquipment(String equipment) {
+        this.equipment = equipment;
+    }
+
+    public String getCompetencies() {
+        return competencies;
+    }
+
+    public void setCompetencies(String competencies) {
+        this.competencies = competencies;
+    }
+
+    public String getAbilities() {
+        return abilities;
+    }
+
+    public void setAbilities(String abilities) {
+        this.abilities = abilities;
+    }
 }

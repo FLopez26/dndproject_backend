@@ -24,4 +24,36 @@ public class Competencies {
     @ManyToOne
     @JoinColumn(name = "backgroundId", referencedColumnName = "backgroundId")
     private Background background;
+
+    public Integer getCompetencyId() {
+        return competencyId;
+    }
+
+    public void setCompetencyId(Integer competencyId) {
+        this.competencyId = competencyId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public CharacterClass getCharacterClass() {
+        return characterClass;
+    }
+
+    public void setCharacterClass(CharacterClass characterClass) {
+        this.characterClass = characterClass;
+    }
+
+    public Background getBackground() {
+        return background;
+    }
+
+    public void setBackground(Background background) {
+        this.background = background;
+    }
 }

@@ -22,4 +22,36 @@ public class Background {
 
     @Column(columnDefinition = "TEXT")
     private String competencies;
+
+    public Integer getBackgroundId() {
+        return backgroundId;
+    }
+
+    public void setBackgroundId(Integer backgroundId) {
+        this.backgroundId = backgroundId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getEquipment() {
+        return equipment;
+    }
+
+    public void setEquipment(String equipment) {
+        this.equipment = equipment;
+    }
+
+    public String getCompetencies() {
+        return competencies;
+    }
+
+    public void setCompetencies(String competencies) {
+        this.competencies = competencies;
+    }
 }
