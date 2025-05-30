@@ -25,7 +25,7 @@ public class Characters {
     private String bonds;
     private String flaws;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name= "statsId", referencedColumnName = "statsId")
     private Stats stats;
 
@@ -41,15 +41,15 @@ public class Characters {
     @JoinColumn(name = "backgroundId", referencedColumnName = "backgroundId")
     private Background background;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "abilitiesId", referencedColumnName = "abilityId")
     private Abilities abilities;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "equipmentId", referencedColumnName = "equipmentId")
     private Equipment equipment;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "competenciesId", referencedColumnName = "competencyId")
     private Competencies competencies;
 

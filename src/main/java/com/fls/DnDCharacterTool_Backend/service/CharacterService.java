@@ -2,6 +2,7 @@ package com.fls.DnDCharacterTool_Backend.service;
 
 import com.fls.DnDCharacterTool_Backend.model.Characters;
 import com.fls.DnDCharacterTool_Backend.repository.CharacterRepository;
+import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -24,6 +25,7 @@ public class CharacterService {
         return characterRepository.findById(id);
     }
 
+    @Transactional
     public Characters createCharacter(Characters character) {
         return characterRepository.save(character);
     }
