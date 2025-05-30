@@ -196,4 +196,6 @@ public class Characters {
     public void setUser(User user) {
         this.user = user;
     }
+
+
 }

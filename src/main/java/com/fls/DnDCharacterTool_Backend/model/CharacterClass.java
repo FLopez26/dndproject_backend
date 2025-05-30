@@ -12,6 +12,7 @@ import lombok.AllArgsConstructor;
 public class CharacterClass {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer classId;
 
     private String name;

@@ -12,6 +12,7 @@ import lombok.NoArgsConstructor;
 public class Race {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer raceId;
 
     private String name;
