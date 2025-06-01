@@ -53,7 +53,9 @@ public class Characters {
     @JoinColumn(name = "competenciesId", referencedColumnName = "competencyId")
     private Competencies competencies;
 
-    private byte[] image;
+    @Lob
+    @Column(columnDefinition = "LONGTEXT")
+    private String image;
 
     private Boolean isPublic;
 
@@ -173,14 +175,6 @@ public class Characters {
         this.competencies = competencies;
     }
 
-    public byte[] getImage() {
-        return image;
-    }
-
-    public void setImage(byte[] image) {
-        this.image = image;
-    }
-
     public Boolean getIsPublic() {
         return isPublic;
     }
@@ -197,5 +191,11 @@ public class Characters {
         this.user = user;
     }
 
+    public String getImage() {
+        return image;
+    }
+    public void setImage(String image) {
+        this.image = image;
+    }
 
 }
